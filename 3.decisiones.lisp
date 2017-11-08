@@ -1,0 +1,23 @@
+(defun comparar (a b)
+  (if (> a b)
+    (write-line (concatenate 'string "A es mayor " (write-to-string a)))
+    (write-line (concatenate 'string "B es mayor " (write-to-string b)))
+  )
+)
+(comparar 12 26)
+
+(defun comvarios (a b)
+  (cond
+    ((= a b) (write "Son iguales"))
+    ((> a b) (write (concatenate 'string "A es mayor " (write-to-string a))))
+    ((< a b) (write (concatenate 'string "B es mayor " (write-to-string b))))
+  )
+)
+(comvarios 122 13) 
+
+(defun cuando (a)
+  (when (= 0 (mod a 2)) 
+    (write "es divisible en dos")
+  )
+)
+(cuando 233)
