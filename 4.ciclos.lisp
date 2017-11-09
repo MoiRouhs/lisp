@@ -17,5 +17,9 @@
 )
 
 (dotimes (a 5) ; Repite 5 veces el ciclo empezando en cero.
-   (print a) (prin1 (* a a)) ; a toma un valor de 0 a 4 dependiendo el ciclo en el que se encuentro y realiza la operacion, hasta repetir el ciclo las veces dichas en la primera linea de dotimes.  
+   (print a) (prin1 (* a a)) ; a toma un valor de 0 a 4 dependiendo el ciclo en el que se encuentro y realiza la operacion, hasta repetir el ciclo las veces dichas en la primera linea de dotimes  
+)
+
+(dolist (d '(1 2 3 4 5)) ; Itinera sobre los valores de una lista
+   (format t "~% Valor d: ~d, d al cuadrado: ~d" d (* d d)) ; realiza los procesos hasta terminar con la lista.
 )
